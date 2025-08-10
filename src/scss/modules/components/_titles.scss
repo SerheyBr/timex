@@ -1,0 +1,34 @@
+@use "../base/variables" as *;
+
+.title-section {
+  font-weight: 900;
+  font-size: $font-size-l;
+  line-height: 135%;
+  text-transform: uppercase;
+}
+
+.title-card {
+  font-weight: 700;
+  font-size: $font-size-m;
+  line-height: 147%;
+  text-transform: uppercase;
+  color: #000;
+}
+.subtitle-card {
+  font-size: $font-size-s;
+  line-height: 143%;
+  color: #3c3c3c;
+}
+.title-filter-category {
+  font-weight: 900;
+  font-size: 13px;
+  line-height: 154%;
+  text-transform: uppercase;
+}
+
+.title-full-post {
+  font-weight: 900;
+  font-size: $font-size-l;
+  line-height: 135%;
+  text-transform: uppercase;
+}

@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/libs/slim-select/slimselect.css" />
@@ -16,35 +16,115 @@
     <title>Template-vite.1.0.</title>
   </head>
   <body>
-    <header class="header">
+    <!-- header start -->
+<header class="header">
   <div class="container">
     <div class="header__wrapper">
+      <div class="burger-menu header__burger">
+        <button class="burger-menu__button"></button>
+      </div>
       <img
-        src="assets/images/logo-plasholder.svg"
+        class="header__logo"
+        src="assets/images/placeholder.svg"
         alt="logo"
         width="80"
         height="60"
       />
-      <div>HEADER</div>
-      <nav>
+      <nav class="header__navigation">
         <ul>
           <li>
-            <a href="index.html">HOME</a>
+            <a href="#">Одежда</a>
+            <svg
+              width="8"
+              height="5"
+              viewBox="0 0 8 5"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.3"
+                d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z"
+                fill="white"
+              />
+            </svg>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+            </ul>
           </li>
           <li>
-            <a href="about.html">ABOUT</a>
+            <a href="#">Обувь</a>
+            <svg
+              width="8"
+              height="5"
+              viewBox="0 0 8 5"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.3"
+                d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z"
+                fill="white"
+              />
+            </svg>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+            </ul>
           </li>
           <li>
-            <a href="services.html">SERVICES</a>
+            <a href="#">Аксессуары</a>
+            <svg
+              width="8"
+              height="5"
+              viewBox="0 0 8 5"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.3"
+                d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z"
+                fill="white"
+              />
+            </svg>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+            </ul>
           </li>
           <li>
-            <a href="contacts.html">CONTACTS</a>
+            <a href="#">Бренды</a>
+          </li>
+          <li>
+            <a href="#">Расчет стоимости</a>
+          </li>
+          <li>
+            <a href="#">Информация</a>
           </li>
         </ul>
       </nav>
+      <div class="header__icons">
+        <div class="header__icon">
+          <img src="assets/images/icons/seacrh.svg" alt="search" />
+        </div>
+        <a href="#" class="header__icon">
+          <img src="assets/images/icons/star.svg" alt="star" />
+        </a>
+        <a href="#" class="header__icon">
+          <img src="assets/images/icons/profile.svg" alt="profile" />
+        </a>
+        <a href="#" class="header__icon">
+          <img src="assets/images/icons/cart.svg" alt="cart" />
+          <p class="header__cart-price">11 899 ₽</p>
+          <p class="header__numbers">7</p>
+        </a>
+      </div>
     </div>
   </div>
 </header>
+<!-- header end -->
 
     <main>
       <style>
@@ -74,57 +154,58 @@
         }
       </style>
 
-      <section class="demo__btns-tip-color">
-        <div class="container">
-          <div class="demo__btns-tip-color--columns">
-            <div class="demo__btns-tip-color--column">
-              <h2 class="demo__title">Типография</h2>
-              <ul class="demo__list">
-                <li><h1>заголовок h1</h1></li>
-                <li><h2>заголовок h2</h2></li>
-                <li><h3>заголовок h3</h3></li>
-                <li><h4>заголовок h4</h4></li>
-                <li><h5>заголовок h5</h5></li>
-                <li><h6>заголовок h6</h6></li>
-                <li><p>текст p</p></li>
-              </ul>
-            </div>
-            <div class="demo__btns-tip-color--column">
-              <h2 class="demo__title">Цветовая палитра</h2>
-              <ul class="demo__list demo__list-color">
-                <li>$color-primary</li>
-                <li>$color-secondary</li>
-                <li>$color-text</li>
-              </ul>
-            </div>
-            <div class="demo__btns-tip-color--column">
-              <h2 class="demo__title">Кнопки</h2>
-              <ul class="demo__list">
-                <li>
-                  <button class="button">button</button>
-                </li>
-                <li>
-                  <button class="button button--primary">button primary</button>
-                </li>
-                <li>
-                  <button class="button button--secondary">
-                    button secondary
-                  </button>
-                </li>
-                <li>
-                  <button class="button button--outline">button outline</button>
-                </li>
-                <li>
-                  <button class="button button--ghost">button ghost</button>
-                </li>
-              </ul>
+      <div class="none">
+        <section class="demo__btns-tip-color">
+          <div class="container">
+            <div class="demo__btns-tip-color--columns">
+              <div class="demo__btns-tip-color--column">
+                <h2 class="demo__title">Типография</h2>
+                <ul class="demo__list">
+                  <li class="title-section">заголовок секций</li>
+                  <li class="title-card">заголовок карточки</li>
+                  <li class="subtitle-card">подзаголовок карточки</li>
+                  <li class="title-filter-category">заголовок категорий</li>
+                  <li class="title-full-post">заголовок в full посте</li>
+                </ul>
+              </div>
+              <div class="demo__btns-tip-color--column">
+                <h2 class="demo__title">Цветовая палитра</h2>
+                <ul class="demo__list demo__list-color">
+                  <li>$black: #121214;</li>
+                  <li>$blue: #49d0ff;</li>
+                  <li>$light-gray: #8c8f96;</li>
+                  <li>$dark-gray: #303030;</li>
+                </ul>
+              </div>
+              <div class="demo__btns-tip-color--column">
+                <h2 class="demo__title">Кнопки</h2>
+                <ul class="demo__list">
+                  <li>
+                    <button class="button">
+                      button
+                      <svg
+                        width="6"
+                        height="10"
+                        viewBox="0 0 6 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5.36529 5.56549C5.67771 5.25307 5.67771 4.74654 5.36529 4.43412L1.36529 0.434119C1.05288 0.1217 0.546343 0.1217 0.233924 0.434119C-0.0784959 0.746538 -0.0784959 1.25307 0.233924 1.56549L3.66824 4.9998L0.233924 8.43412C-0.0784955 8.74654 -0.0784955 9.25307 0.233924 9.56549C0.546343 9.87791 1.05288 9.87791 1.36529 9.56549L5.36529 5.56549Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- br -->
-      <section class="sec-form padding-section">
+        </section>
+        <!-- br -->
+        <section class="sec-form padding-section">
   <div class="container">
     <div class="sec-form__wrapper">
       <h2 class="sec-form__title">Форма</h2>
@@ -296,8 +377,8 @@
   </div>
 </section>
 
-      <!-- br -->
-      <section class="sec-slider padding-section">
+        <!-- br -->
+        <section class="sec-slider padding-section">
   <div class="container">
     <div class="sec-slider__wrapper">
       <h2 class="sec-slider__title">Слайдер</h2>
@@ -446,14 +527,77 @@
   </div>
 </section>
 
+      </div>
     </main>
-    <footer class="footer">
+    <!-- footer start -->
+<footer class="footer">
   <div class="container">
     <div class="footer__wrapper">
-      <div>FOOTER</div>
+      <div class="footer__columns">
+        <div class="footer__column">
+          <div class="footer__column-title">Каталог</div>
+          <ul class="footer__list">
+            <li>
+              <a href="#">Одежда</a>
+            </li>
+            <li>
+              <a href="#">Одежда</a>
+            </li>
+            <li>
+              <a href="#">Одежда</a>
+            </li>
+            <li>
+              <a href="#">Одежда</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <p class="footer__column-title">Информация</p>
+          <ul class="footer__list">
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Оплата</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <p class="footer__column-title">Контакты</p>
+          <ul class="footer__list">
+            <li class="footer__mail">
+              <a href="#">info@xwear.info</a>
+            </li>
+            <li class="footer__phone">
+              <a href="tel:79936083885">+7 993 608 38 85</a>
+            </li>
+          </ul>
+          <div class="footer__icons">
+            <p class="footer__icons-title">Мессенджеры</p>
+            <div class="footer__icons-flex">
+              <a href="#"
+                ><img src="assets/images/icons/watsap.svg" alt="watsap"
+              /></a>
+              <a href="#"
+                ><img src="assets/images/icons/telegram.svg" alt="telegram"
+              /></a>
+            </div>
+          </div>
+          <div class="footer__icons">
+            <p class="footer__icons-title">Наши соц.сети</p>
+            <div class="footer__icons-flex">
+              <a href="#"><img src="assets/images/icons/vk.svg" alt="vk" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
+<!-- footer end -->
 
 
     <script src="assets/libs/slim-select/slimselect.min.js"></script>

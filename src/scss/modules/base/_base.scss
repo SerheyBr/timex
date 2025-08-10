@@ -4,14 +4,19 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: $font-size-base;
   line-height: 150%;
+  color: $black;
 }
 
 main {
   flex: 1;
+}
+
+.none {
+  display: none;
 }
 
 .padding-section {
@@ -19,29 +24,11 @@ main {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1362px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 20px;
 }
-
-h1 {
-  font-size: $font-size-xxxl;
-}
-h2 {
-  font-size: $font-size-xxl;
-}
-h3 {
-  font-size: $font-size-xl;
-}
-h4 {
-  font-size: $font-size-lg;
-}
-h5 {
-  font-size: $font-size-md;
-}
-h6 {
-  font-size: $font-size-sm;
-}
-p {
-  font-size: $font-size-xs;
+.container-big {
+  max-width: 1541px;
+  margin: 0 auto;
 }

@@ -1,41 +1,20 @@
 @use "../base/variables" as *;
 
 .button {
-  padding: 10px 10px;
-  border-radius: 15px;
-  background-color: grey;
+  padding: 23px 27px;
+  border-radius: 5px;
+  background-color: $black;
   transition: all 0.3s;
   user-select: none;
-  display: inline-block;
-  width: auto;
-  font-size: $font-size-md;
+  font-size: 12px;
+  line-height: 167%;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 23px;
 
   &:hover {
     opacity: 0.7;
-  }
-  &--primary {
-    color: #fff;
-    background-color: $color-primary;
-    &:hover {
-    }
-  }
-  &--secondary {
-    color: #fff;
-    background-color: $color-secondary;
-    &:hover {
-    }
-  }
-  &--outline {
-    border: 1px solid $color-primary;
-    color: $color-primary;
-    background-color: inherit;
-    &:hover {
-    }
-  }
-  &--ghost {
-    color: $color-primary;
-    background-color: inherit;
-    &:hover {
-    }
   }
 }

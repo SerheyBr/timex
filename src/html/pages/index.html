@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/libs/slim-select/slimselect.css" />
@@ -45,59 +45,61 @@
         }
       </style>
 
-      <section class="demo__btns-tip-color">
-        <div class="container">
-          <div class="demo__btns-tip-color--columns">
-            <div class="demo__btns-tip-color--column">
-              <h2 class="demo__title">Типография</h2>
-              <ul class="demo__list">
-                <li><h1>заголовок h1</h1></li>
-                <li><h2>заголовок h2</h2></li>
-                <li><h3>заголовок h3</h3></li>
-                <li><h4>заголовок h4</h4></li>
-                <li><h5>заголовок h5</h5></li>
-                <li><h6>заголовок h6</h6></li>
-                <li><p>текст p</p></li>
-              </ul>
-            </div>
-            <div class="demo__btns-tip-color--column">
-              <h2 class="demo__title">Цветовая палитра</h2>
-              <ul class="demo__list demo__list-color">
-                <li>$color-primary</li>
-                <li>$color-secondary</li>
-                <li>$color-text</li>
-              </ul>
-            </div>
-            <div class="demo__btns-tip-color--column">
-              <h2 class="demo__title">Кнопки</h2>
-              <ul class="demo__list">
-                <li>
-                  <button class="button">button</button>
-                </li>
-                <li>
-                  <button class="button button--primary">button primary</button>
-                </li>
-                <li>
-                  <button class="button button--secondary">
-                    button secondary
-                  </button>
-                </li>
-                <li>
-                  <button class="button button--outline">button outline</button>
-                </li>
-                <li>
-                  <button class="button button--ghost">button ghost</button>
-                </li>
-              </ul>
+      <div class="none">
+        <section class="demo__btns-tip-color">
+          <div class="container">
+            <div class="demo__btns-tip-color--columns">
+              <div class="demo__btns-tip-color--column">
+                <h2 class="demo__title">Типография</h2>
+                <ul class="demo__list">
+                  <li class="title-section">заголовок секций</li>
+                  <li class="title-card">заголовок карточки</li>
+                  <li class="subtitle-card">подзаголовок карточки</li>
+                  <li class="title-filter-category">заголовок категорий</li>
+                  <li class="title-full-post">заголовок в full посте</li>
+                </ul>
+              </div>
+              <div class="demo__btns-tip-color--column">
+                <h2 class="demo__title">Цветовая палитра</h2>
+                <ul class="demo__list demo__list-color">
+                  <li>$black: #121214;</li>
+                  <li>$blue: #49d0ff;</li>
+                  <li>$light-gray: #8c8f96;</li>
+                  <li>$dark-gray: #303030;</li>
+                </ul>
+              </div>
+              <div class="demo__btns-tip-color--column">
+                <h2 class="demo__title">Кнопки</h2>
+                <ul class="demo__list">
+                  <li>
+                    <button class="button">
+                      button
+                      <svg
+                        width="6"
+                        height="10"
+                        viewBox="0 0 6 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5.36529 5.56549C5.67771 5.25307 5.67771 4.74654 5.36529 4.43412L1.36529 0.434119C1.05288 0.1217 0.546343 0.1217 0.233924 0.434119C-0.0784959 0.746538 -0.0784959 1.25307 0.233924 1.56549L3.66824 4.9998L0.233924 8.43412C-0.0784955 8.74654 -0.0784955 9.25307 0.233924 9.56549C0.546343 9.87791 1.05288 9.87791 1.36529 9.56549L5.36529 5.56549Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- br -->
-      @@include('../components/sec-form.html')
-      <!-- br -->
-      @@include('../components/sec-slider.html')
+        </section>
+        <!-- br -->
+        @@include('../components/sec-form.html')
+        <!-- br -->
+        @@include('../components/sec-slider.html')
+      </div>
     </main>
     @@include('../components/footer.html')
 

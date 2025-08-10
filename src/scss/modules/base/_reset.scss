@@ -52,6 +52,8 @@ p {
 ul,
 ul li {
   list-style: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
 img {

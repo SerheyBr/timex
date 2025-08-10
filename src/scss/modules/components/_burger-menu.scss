@@ -1,0 +1,70 @@
+@use "../base/variables" as *;
+
+// burger-menu start
+.burger-menu {
+  position: relative;
+  z-index: 30;
+  padding: 10px;
+  cursor: pointer;
+
+  &__button {
+    width: 20px;
+    height: 10px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      //   transform: translate(0, 0) rotate(45deg);
+      transform: translate(0, 0) rotate(0);
+      transition: all 0.3s;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      //   transform: translate(50%, 0) rotate(-45deg);
+      transform: translate(0, 0) rotate(0);
+      transition: all 0.3s;
+    }
+  }
+
+  &__list {
+    background-color: $black;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    transition: all 0.3s;
+    //   transform: translateY(0);
+    ul {
+      flex-direction: column;
+      padding: 45px;
+      padding-top: 70px;
+    }
+  }
+}
+
+.burger-menu.active .burger-menu__button {
+  &::after {
+    top: 50%;
+    transform: translate(0, 0) rotate(45deg);
+  }
+  &::before {
+    top: 50%;
+    transform: translate(0%, 0) rotate(-45deg);
+  }
+}
+
+// burger-menu end
