@@ -66,6 +66,9 @@
     ul li svg path {
       transition: all 0.3s;
     }
+    ul li svg {
+      transition: all 0.3s;
+    }
     // ul li:hover svg path {
     //   fill: $blue;
     // }
@@ -213,6 +216,9 @@
         &::after {
           width: 10%;
         }
+      }
+      ul li:hover svg {
+        transform: rotate(180deg);
       }
     }
   }

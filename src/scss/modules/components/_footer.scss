@@ -24,7 +24,11 @@
     color: #fff;
     margin-bottom: 9px;
   }
-
+  &__dropdown {
+    svg {
+      display: none;
+    }
+  }
   &__list {
     li {
       margin-bottom: 9px;
@@ -70,6 +74,73 @@
   &__icons-flex {
     display: flex;
     gap: 9px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 30px 10px;
+
+    &__wrapper {
+    }
+
+    &__columns {
+      flex-direction: column;
+    }
+
+    &__column {
+      display: flex;
+      flex-direction: column;
+      &:not(:last-child) {
+        border-bottom: 1px solid rgb(255, 255, 255);
+      }
+    }
+
+    &__column-title {
+      padding: 10px 0;
+      margin-bottom: 0;
+    }
+
+    &__list {
+    }
+    &__dropdown {
+      p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      p svg {
+        display: block;
+        margin-top: 12px;
+        margin-right: 5px;
+      }
+      ul {
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: all 0.3s;
+      }
+      &.active ul {
+        overflow: visible;
+        max-height: 500px;
+        opacity: 1;
+      }
+      &.active p svg {
+        transform: rotate(180deg);
+      }
+    }
+    &__mail {
+    }
+
+    &__phone {
+    }
+
+    &__icons {
+    }
+
+    &__icons-title {
+    }
+
+    &__icons-flex {
+    }
   }
 }
 // footer end

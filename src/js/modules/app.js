@@ -7,6 +7,7 @@ btnBurger.addEventListener("click", (e) => {
   burgerMenu.classList.toggle("active");
 });
 
+// action droprown for berger menu
 const allLiInBurgerMenu = burgerMenu.querySelectorAll("ul li");
 
 allLiInBurgerMenu.forEach((el) => {
@@ -17,5 +18,21 @@ allLiInBurgerMenu.forEach((el) => {
     } else {
       console.log("no");
     }
+  });
+});
+
+// action dropdown for footer
+const dropdownFooter = document.querySelectorAll(".footer__dropdown");
+
+dropdownFooter.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    const element = e.currentTarget;
+    dropdownFooter.forEach((item) => {
+      if (item === element) {
+        item.classList.toggle("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
   });
 });

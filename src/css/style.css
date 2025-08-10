@@ -304,6 +304,9 @@ main {
   color: #fff;
   margin-bottom: 9px;
 }
+.footer__dropdown svg {
+  display: none;
+}
 .footer__list li {
   margin-bottom: 9px;
   font-weight: 400;
@@ -338,6 +341,49 @@ main {
 .footer__icons-flex {
   display: flex;
   gap: 9px;
+}
+@media (max-width: 576px) {
+  .footer {
+    padding: 30px 10px;
+  }
+  .footer__columns {
+    flex-direction: column;
+  }
+  .footer__column {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__column:not(:last-child) {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  .footer__column-title {
+    padding: 10px 0;
+    margin-bottom: 0;
+  }
+  .footer__dropdown p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__dropdown p svg {
+    display: block;
+    margin-top: 12px;
+    margin-right: 5px;
+  }
+  .footer__dropdown ul {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .footer__dropdown.active ul {
+    overflow: visible;
+    max-height: 500px;
+    opacity: 1;
+  }
+  .footer__dropdown.active p svg {
+    transform: rotate(180deg);
+  }
 }
 
 .header {
@@ -390,6 +436,9 @@ main {
   width: max-content;
 }
 .header__navigation ul li svg path {
+  transition: all 0.3s;
+}
+.header__navigation ul li svg {
   transition: all 0.3s;
 }
 .header__navigation ul li ul li {
@@ -515,6 +564,9 @@ main {
   }
   .header__navigation ul li ul li:hover::after {
     width: 10%;
+  }
+  .header__navigation ul li:hover svg {
+    transform: rotate(180deg);
   }
 }
 
