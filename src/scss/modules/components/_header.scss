@@ -222,6 +222,12 @@
       }
     }
   }
+
+  @media (max-width: $breakpoint-sm) {
+    &__icons {
+      gap: 10px;
+    }
+  }
 }
 
 .header__navigation.active {

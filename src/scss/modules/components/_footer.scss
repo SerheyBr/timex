@@ -3,7 +3,7 @@
 // footer start
 .footer {
   background-color: $black;
-  padding: 45px;
+  padding: 45px 0;
   color: #fff;
   &__wrapper {
   }
@@ -77,7 +77,7 @@
   }
 
   @media (max-width: $breakpoint-sm) {
-    padding: 30px 10px;
+    padding: 30px 0;
 
     &__wrapper {
     }
