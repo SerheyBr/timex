@@ -8,10 +8,17 @@
 // компоненты
 
 @use "modules/components/buttons";
-@use "modules/components/custom-swiper";
 @use "modules/components/footer";
 @use "modules/components/header";
+@use "modules/components/sliders";
+@use "modules/components/cards";
 @use "modules/components/forms";
-@use "modules/components/input-select";
 @use "modules/components/titles";
+@use "modules/components/input-select";
 @use "modules/components/burger-menu";
+
+// секции
+@use "modules/components/section-hero";
+@use "modules/components/sec-demo-catalog";
+// @use "modules/components/hero-slider-item";
+// @use "modules/components/hero-slider";

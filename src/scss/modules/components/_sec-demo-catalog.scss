@@ -1,0 +1,55 @@
+@use "../base/variables" as *;
+.sec-demo-catalog {
+  &__wrapper {
+  }
+
+  &__category {
+    margin-bottom: 80px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__category-title {
+  }
+
+  &__link-more {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 164%;
+    text-transform: uppercase;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $black;
+    transition: all 0.3s;
+    cursor: pointer;
+    svg path {
+      transition: all 0.3s;
+    }
+    &:hover {
+      color: #0000007c;
+      border-bottom: 2px solid #0000007c;
+    }
+    &:hover svg path {
+      fill: #0000007c;
+    }
+  }
+  @media (max-width: $breakpoint-md) {
+    &__category-title {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: $breakpoint-sm) {
+    &__link-more {
+      font-size: 12px;
+    }
+    &__category-title {
+      font-size: 15px;
+    }
+  }
+}

@@ -5,6 +5,12 @@
   font-size: $font-size-l;
   line-height: 135%;
   text-transform: uppercase;
+  @media (max-width: $breakpoint-md) {
+    font-size: 25px;
+  }
+  @media (max-width: $breakpoint-sm) {
+    font-size: 19px;
+  }
 }
 
 .title-card {
@@ -13,11 +19,17 @@
   line-height: 147%;
   text-transform: uppercase;
   color: #000;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 15px;
+  }
 }
 .subtitle-card {
   font-size: $font-size-s;
   line-height: 143%;
   color: #3c3c3c;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 12px;
+  }
 }
 .title-filter-category {
   font-weight: 900;
