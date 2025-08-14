@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/libs/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/libs/slim-select/slimselect.css" />
+    <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Template-vite.1.0.</title>
+  </head>
+  <body>
+    @@include('../components/header.html')
+    <!-- br -->
+
+    <main class="catalog">
+      @@include('../components/breadcrumbs.html')
+      <div class="container">
+        <div class="catalog__wrapper">
+          <div class="catalog__head--mobill">
+            <div class="catalog__info">
+              <h4 class="catalog__title title-section">Обувь</h4>
+              <p class="catalog__subtitle">1 746 товаров</p>
+            </div>
+            <div class="catalog__text-sort">
+              <p>Сортировать по <b>&nbsp;От дешевых к дорогим</b></p>
+              <svg
+                width="8"
+                height="5"
+                viewBox="0 0 8 5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z"
+                  fill="#6A6E71"
+                />
+              </svg>
+              <ul class="catalog__menu-sort">
+                <li>От дешевых к дорогим</li>
+                <li>От новых к старым</li>
+              </ul>
+            </div>
+          </div>
+          <button class="catalog__button-triger-mobil-menu">
+            Открыть Фильтры
+            <svg
+              width="9"
+              height="5"
+              viewBox="0 0 9 5"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.14645 4.85355C4.34171 5.04882 4.65829 5.04882 4.85355 4.85355L8.03553 1.67157C8.2308 1.47631 8.2308 1.15973 8.03553 0.964466C7.84027 0.769204 7.52369 0.769204 7.32843 0.964466L4.5 3.79289L1.67157 0.964466C1.47631 0.769204 1.15973 0.769204 0.964466 0.964466C0.769204 1.15973 0.769204 1.47631 0.964466 1.67157L4.14645 4.85355ZM4 3.5L4 4.5L5 4.5L5 3.5L4 3.5Z"
+                fill="#232323"
+              />
+            </svg>
+          </button>
+          <div class="catalog__text-sort-mobil">
+            <p>Сортировать по <b>&nbsp;От дешевых к дорогим</b></p>
+            <svg
+              width="8"
+              height="5"
+              viewBox="0 0 8 5"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z"
+                fill="#6A6E71"
+              />
+            </svg>
+            <ul class="catalog__menu-sort">
+              <li>От дешевых к дорогим</li>
+              <li>От новых к старым</li>
+            </ul>
+          </div>
+          @@include('../components/sidebar.html')
+          @@include('../components/catalog-content.html')
+        </div>
+      </div>
+    </main>
+    @@include('../components/footer.html')
+
+    <script src="assets/libs/nouislider/nouislider.min.js"></script>
+    <script src="assets/libs/slim-select/slimselect.min.js"></script>
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -36,3 +36,14 @@ dropdownFooter.forEach((el) => {
     });
   });
 });
+
+// action dropdown for sidebar
+const filterBox = document.querySelectorAll(".sidebar__filter");
+
+filterBox.forEach((el) => {
+  const trigger = el.querySelector(".sidebar-filter__header");
+
+  trigger.addEventListener("click", (e) => {
+    el.classList.toggle("active");
+  });
+});

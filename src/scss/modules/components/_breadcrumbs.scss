@@ -1,0 +1,19 @@
+@use "../base/variables" as *;
+.breadcrumbs {
+  margin-top: 14px;
+  margin-bottom: 48px;
+  &__content {
+    font-size: 13px;
+    line-height: 154%;
+    color: $light-gray;
+    span {
+      color: $black;
+    }
+  }
+  @media (max-width: $breakpoint-lg) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: $breakpoint-sm) {
+    margin-bottom: 15px;
+  }
+}

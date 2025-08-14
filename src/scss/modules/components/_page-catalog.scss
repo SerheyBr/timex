@@ -1,0 +1,121 @@
+@use "../base/variables" as *;
+
+.catalog {
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+  }
+  &__head--mobill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    display: none;
+  }
+  &__info {
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 146%;
+    color: $light-gray;
+  }
+
+  &__text-sort {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 292%;
+    color: #6d6d6d;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+    b {
+      color: #000;
+    }
+    svg {
+      transition: all 0.3s;
+    }
+    &:hover svg {
+      transform: rotate(180deg);
+    }
+    &:hover > .catalog__menu-sort {
+      transform: translateY(100%);
+      z-index: 1;
+      max-height: 500px;
+      opacity: 1;
+      overflow: visible;
+    }
+  }
+  &__menu-sort {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(0);
+    z-index: 0;
+    max-height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $light-gray;
+    transition: all 0.3s;
+
+    li {
+      padding: 5px 10px;
+      background-color: #fff;
+      transition: all 0.3s;
+    }
+    li:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    li:not(:last-child) {
+      border-bottom: 1px solid $light-gray;
+    }
+  }
+  &__button-triger-mobil-menu {
+    border: 1px solid #e6e7eb;
+    border-radius: 5px;
+    padding: 21px 25px;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 154%;
+    text-transform: uppercase;
+    color: var(--black);
+    background-color: #fff;
+    display: none;
+  }
+  &__text-sort-mobil {
+    display: none;
+  }
+  @media (max-width: $breakpoint-md) {
+    &__wrapper {
+      flex-direction: column;
+      gap: 15px;
+    }
+    &__head--mobill {
+      display: flex;
+    }
+    &__button-triger-mobil-menu {
+      display: flex;
+    }
+    &__text-sort {
+      display: none;
+    }
+    &__text-sort-mobil {
+      display: flex;
+      gap: 10px;
+      font-size: 13px;
+    }
+  }
+}
