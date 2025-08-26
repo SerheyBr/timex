@@ -1,0 +1,91 @@
+@use "../base/variables" as *;
+.full-card {
+  background-color: yellow;
+  margin-bottom: 100px;
+  &__wrapper {
+    display: flex;
+  }
+
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+  }
+
+  &__description {
+    width: 50%;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 31px;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 13px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+    text-transform: uppercase;
+    color: $dark-gray;
+    margin-bottom: 13px;
+  }
+  &__description__body {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 157%;
+    color: #20282f;
+    display: flex;
+  }
+  //   &__description-list-names {
+  //     // background-color: red;
+  //     width: 400px;
+  //     li {
+  //       position: relative;
+  //       width: 100%;
+  //       p {
+  //         width: max-content;
+  //         background-color: $blue;
+  //         display: block;
+  //       }
+  //     }
+  //   }
+
+  //   &__description-list-result {
+  //   }
+  &__description-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+    }
+    span {
+      width: 100%;
+      margin: 0 10px;
+      position: relative;
+    }
+  }
+  &__description-name {
+    white-space: nowrap;
+  }
+  &__description-result {
+    text-align: start;
+    white-space: nowrap;
+    width: 200px;
+    flex-shrink: 0;
+  }
+  &__description-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px dotted #ccc;
+  }
+}

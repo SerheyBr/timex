@@ -4,6 +4,11 @@
 .header {
   background-color: $black;
   color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
   &__burger {
     display: none;
   }
@@ -16,7 +21,8 @@
 
   &__navigation {
     display: flex;
-
+    position: relative;
+    z-index: 2;
     ul {
       display: flex;
       // gap: 60px;

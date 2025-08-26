@@ -1,5 +1,6 @@
 @use "../base/variables" as *;
 
+// catalog page start
 .catalog {
   &__wrapper {
     display: flex;
@@ -119,3 +120,18 @@
     }
   }
 }
+// catalog page end
+// full card page start
+.page-full-card {
+  &__wrapper {
+  }
+
+  &__body {
+  }
+
+  &__slider-bottom {
+    margin-bottom: 100px;
+  }
+}
+
+// full card page start

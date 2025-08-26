@@ -57,6 +57,21 @@ const swiper2 = new Swiper(".slider-demo-category", {
   },
 });
 
+// Слайдер превью
+const thumbsSwiper = new Swiper(".full-card-thumbs-slider", {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+
+// Основной слайдер
+const mainSwiper = new Swiper(".full-card-main-slider", {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: thumbsSwiper,
+  },
+});
 // 11111111111111111111111111111111111111111111111111111111111111111111111111
 /**
  * Инициализация Swiper слайдера

@@ -1,0 +1,76 @@
+@use "../base/variables" as *;
+
+.tab-for-full-card {
+  &__top {
+    border-top: 1px solid #f4f5f9;
+    border-bottom: 1px solid #f4f5f9;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    // gap: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #20282f;
+  }
+
+  &__item {
+    width: 120px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #f4f5f9;
+    transition: all 0.3s;
+  }
+  &__item.active {
+    border-bottom: 1px solid $blue;
+  }
+  &__body {
+    margin-bottom: 90px;
+    display: none;
+  }
+  &__body.active {
+    display: block;
+  }
+}
+
+.tab-for-full-card-fac {
+  &__item {
+    border-bottom: 1px solid #ddd;
+  }
+
+  &__trigger {
+    padding: 21px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__trigger {
+    svg {
+      transform: rotate(90deg);
+      transition: all 0.3s;
+    }
+  }
+  &__trigger.active {
+    svg {
+      transform: rotate(270deg);
+    }
+  }
+
+  &__body {
+    max-height: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s;
+    padding: 10px;
+  }
+  &__body.active {
+    max-height: 100%;
+    opacity: 1;
+    position: static;
+  }
+}

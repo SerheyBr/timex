@@ -23,7 +23,11 @@
 @use "modules/components/breadcrumbs";
 @use "modules/components/catalog-content";
 @use "modules/components/sidebar";
-@use "modules/components/page-catalog";
+@use "modules/components/full-card";
+@use "modules/components/tabs-for-full-card";
+
+// страницы
+@use "modules/components/pages";
 
 // @use "modules/components/hero-slider-item";
 // @use "modules/components/hero-slider";

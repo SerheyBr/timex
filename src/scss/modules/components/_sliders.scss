@@ -1,7 +1,61 @@
 @use "../base/variables" as *;
 
 // slider hero start
-// ....
+.slider-hero {
+  position: relative;
+  height: 632px;
+  border-radius: 7px;
+  &__arrows {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    bottom: 45px;
+    left: 90px;
+    z-index: 10;
+  }
+  &__button {
+    background-color: #fff;
+    position: relative;
+    width: 67px;
+    height: 67px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.slider-hero .swiper-button-disabled {
+  background-color: #f0f2f6;
+}
+
+@media (max-width: $breakpoint-md) {
+  .slider-hero {
+    height: 451px;
+    &__arrows {
+      gap: 10px;
+      bottom: 32px;
+      left: 70px;
+    }
+    &__button {
+      width: 54px;
+      height: 54px;
+    }
+  }
+}
+@media (max-width: $breakpoint-sm) {
+  .slider-hero {
+    height: 339px;
+    &__arrows {
+      gap: 10px;
+      bottom: 15px;
+      left: 20px;
+    }
+    &__button {
+      width: 54px;
+      height: 54px;
+    }
+  }
+}
 // slider hero end
 
 // slider-demo-category hero start
@@ -47,3 +101,71 @@
 }
 
 // slider-demo-category hero end
+
+// slider full card start
+
+.full-card-main-slider {
+  width: 664px;
+  height: 489px;
+  cursor: pointer;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.full-card-main-slider .swiper-slide {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.full-card-thumbs-slider {
+  // width: 100%;
+  width: 400px;
+  position: relative;
+  margin: 0;
+  &__pagination {
+    position: relative;
+    height: 10px;
+    width: 100%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $light-gray;
+    opacity: 0.5;
+  }
+}
+.full-card-thumbs-slider .swiper-slide {
+  // width: 100px;
+  height: 100px;
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.full-card-thumbs-slider .swiper-slide-thumb-active {
+  position: relative;
+  &::after {
+    transition: all 0.3s;
+  }
+}
+.full-card-thumbs-slider .swiper-slide-thumb-active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $blue;
+}
+// slider full card end
