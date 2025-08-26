@@ -61,16 +61,29 @@
   }
 
   &__body {
+    transform: translateY(-10%);
     max-height: 0;
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: all 0.5s;
+    z-index: -1;
+
     padding: 10px;
   }
   &__body.active {
+    transform: translateY(0);
     max-height: 100%;
     opacity: 1;
+    z-index: 1;
     position: static;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: $breakpoint-xl) {
+  .tab-for-full-card {
+    &__top {
+      margin-bottom: 10px;
+    }
   }
 }

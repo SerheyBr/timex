@@ -143,3 +143,33 @@ if (faq) {
     });
   });
 }
+
+// active tabs for account page
+const tabAccount = document.querySelector(".account");
+
+if (tabAccount) {
+  const tabsBtns = tabAccount.querySelectorAll(".account-sidebar__item");
+  const tabsContent = tabAccount.querySelectorAll(".account-content");
+
+  tabsBtns[0].classList.add("active");
+  tabsContent[0].classList.add("active");
+
+  tabsBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const tabId = e.currentTarget.dataset.account;
+
+      tabsBtns.forEach((el) => {
+        el.classList.remove("active");
+      });
+
+      tabsContent.forEach((el) => {
+        el.classList.remove("active");
+      });
+
+      e.currentTarget.classList.add("active");
+      const selectedContentTab = document
+        .querySelector(`.account-content[data-account="${tabId}"]`)
+        .classList.add("active");
+    });
+  });
+}

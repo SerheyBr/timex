@@ -135,3 +135,24 @@
 }
 
 // full card page start
+
+// account page start
+.account {
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__sidebar {
+  }
+
+  &__body {
+    width: 100%;
+  }
+}
+
+// account page end

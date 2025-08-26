@@ -1,0 +1,267 @@
+@use "../base/variables" as *;
+
+.account-content {
+  width: 100%;
+  display: none;
+  margin-bottom: 100px;
+  &__title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    color: $dark-gray;
+    margin-bottom: 30px;
+  }
+}
+
+.account-content.active {
+  display: block;
+}
+
+.my-account {
+  &__title {
+  }
+  &__grid {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 133px;
+    margin-bottom: 50px;
+  }
+
+  &__grid-item {
+    border: 1px solid #f6f6f6;
+    border-radius: 5px;
+    padding: 33px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  &__grid-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  &__grid-item-wrapper {
+    svg path {
+      fill: #b0b0b0;
+    }
+  }
+  &__list {
+  }
+}
+.current-orders {
+  &__title {
+  }
+
+  &__list {
+    border: 1px solid #e9eaee;
+    border-radius: 5px;
+    padding: 30px;
+  }
+
+  &__item {
+    display: flex;
+    padding: 18px 20px;
+    &:nth-child(1) {
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 141%;
+      text-transform: uppercase;
+      color: $black;
+    }
+    &:nth-child(even) {
+      background-color: #fbfbfb;
+    }
+    li {
+      width: calc(100% / 4);
+      &:last-child {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 141%;
+        text-transform: uppercase;
+        color: $black;
+      }
+    }
+  }
+}
+
+.editing-profile {
+  &__title {
+  }
+  &__grid {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-auto-rows: 70px;
+    gap: 30px;
+  }
+
+  &__item {
+    padding: 15px 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    input::placeholder {
+      color: #cdcfdb;
+    }
+  }
+
+  &__item-title {
+  }
+
+  &__btn {
+    font-weight: 800;
+  }
+}
+
+.my-orders {
+  &__title {
+  }
+
+  &__body {
+    border: 1px solid #e9eaee;
+    border-radius: 5px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+  }
+
+  &__status {
+  }
+
+  &__status-number {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 176%;
+    color: $black;
+  }
+
+  &__status-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #646464;
+    b {
+      font-weight: 700;
+      color: #141414;
+    }
+    span {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 150%;
+      color: #09b11b;
+      padding: 8px 13px;
+      border: 1px solid #f4f4f4;
+      margin-left: 10px;
+    }
+  }
+
+  &__btn-back {
+    border-bottom: 2px solid $black;
+    padding: 0px 0px 5px 0px;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 192%;
+    text-transform: uppercase;
+    color: #000;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    letter-spacing: 0.01em;
+    color: #333;
+    li {
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    li:not(:last-child) {
+      border-bottom: 1px solid #ebebeb;
+    }
+  }
+
+  &__list-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 214%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #333;
+  }
+
+  &__list-item--header {
+    text-transform: uppercase;
+  }
+
+  &__list-item--product {
+    p:first-child {
+      font-weight: 400;
+    }
+  }
+
+  &__list-item--result {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 109%;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+}
+.my-orders-address {
+  border: 1px solid #e9eaee;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 121%;
+  color: $black;
+  padding: 30px 35px;
+  position: relative;
+  &__title {
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 209%;
+    text-transform: uppercase;
+    text-align: center;
+    color: $dark-gray;
+    padding: 13px 30px;
+    background: #f8f8f8;
+    border: 1px solid #e9eaee;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__wrapper {
+    max-width: 300px;
+  }
+
+  &__name {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 167%;
+    color: #3b3b3e;
+    margin-bottom: 14px;
+  }
+
+  &__text--black {
+  }
+}

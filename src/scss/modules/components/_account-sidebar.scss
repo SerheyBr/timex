@@ -1,0 +1,42 @@
+@use "../base/variables" as *;
+
+.account-sidebar {
+  border: 1px solid #e9eaee;
+  border-radius: 5px;
+  width: 318px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 40px;
+  margin-bottom: 100px;
+  &__item {
+    display: flex;
+    gap: 20px;
+    padding: 11px 0;
+    position: relative;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &__item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 1px;
+    height: 100%;
+  }
+  &__item svg path {
+    fill: #b0b0b0;
+  }
+  &__item.active {
+    color: $black;
+  }
+  &__item.active::after {
+    background-color: $blue;
+  }
+  &__item.active svg path {
+    fill: $black;
+  }
+}
